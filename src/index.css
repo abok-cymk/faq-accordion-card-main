@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-kumbhSans: "Kumbh Sans", sans-serif;
+
+  /* Text */
+  --color-veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+  --color-softRed: hsl(14, 88%, 65%);
+
+  /* Gradient background */
+  --color-softViolet: hsl(273, 75%, 66%);
+  --color-softBlue: hsl(240, 73%, 65%);
+
+  /* Text Neutral */
+  --color-veryDarkGrayishBlue: hsl(237, 12%, 33%);
+  --color-darkGrayishBlue: hsl(240, 6%, 50%);
+
+  /* Dividers */
+  --color-lightGrayishBlue: hsl(240, 5%, 91%);
+}
+
