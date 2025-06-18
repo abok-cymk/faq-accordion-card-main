@@ -25,7 +25,7 @@ const Accordion = forwardRef(
       config: { tension: 200, friction: 28 },
     });
     return (
-      <div className="not-first:border-y border-lightGrayishBlue">
+      <div className="border-b border-lightGrayishBlue">
         <button
           ref={ref}
           aria-expanded={isActive}

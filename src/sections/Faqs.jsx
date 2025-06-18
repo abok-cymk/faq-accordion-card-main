@@ -40,7 +40,7 @@ const Faqs = () => {
   return (
     <section id="faqs_section" className="grid lg:overflow-hidden relative grid-cols-1 --gap-[3rem] bg-white rounded-4xl lg:grid-cols-2 md:max-w-2xl lg:max-w-4xl mx-auto items-center-safe px-6 md:px-14 py-6">
     <Illustration className="absolute -top-40 md:-top-70 left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:left-20 -translate-x-1/2"/> 
-      <div className="pt-36 md:pt-54 lg:pt-0">
+      <div className="pt-36 md:pt-54 lg:pt-2 lg:pb-2 ">
           <h2 className="text-3xl font-bold text-veryDarkDesaturatedBlue uppercase mb-4 max-sm:text-center">
             Faq
           </h2>
