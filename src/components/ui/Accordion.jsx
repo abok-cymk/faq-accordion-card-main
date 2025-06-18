@@ -25,14 +25,14 @@ const Accordion = forwardRef(
       config: { tension: 200, friction: 28 },
     });
     return (
-      <>
+      <div className="not-first:border-y border-lightGrayishBlue">
         <button
           ref={ref}
           aria-expanded={isActive}
           aria-controls={answerId}
           onClick={() => setActiveAccordion(isActive ? null : id)}
           className={clsx(
-            "text-veryDarkDesaturatedBlue text-xs cursor-pointer tracking-tight flex items-center justify-between py-4",
+            "text-veryDarkDesaturatedBlue w-full text-xs cursor-pointer tracking-tight flex items-center justify-between py-4",
             isActive ? "font-bold text-veryDarkDesaturatedBlue text-base" : ""
           )}
         >
@@ -45,23 +45,23 @@ const Accordion = forwardRef(
           />
         </button>
         {/* {isActive && ( */}
-          <animated.div
-            id={answerId}
-            role="region"
-            aria-labelledby={`accordion-btn-${id}`}
-            style={{
-              overflow: "hidden",
-              ...springs,
-              width: "100%",
-              willChange: "height, opacity",
-            }}
-          >
-            <div ref={contentRef} style={{ width: "100%" }}>
-              <p className="text-xs text-veryDarkGrayishBlue py-4">{answer}</p>
-            </div>
-          </animated.div>
+        <animated.div
+          id={answerId}
+          role="region"
+          aria-labelledby={`accordion-btn-${id}`}
+          style={{
+            overflow: "hidden",
+            ...springs,
+            width: "100%",
+            willChange: "height, opacity",
+          }}
+        >
+          <div ref={contentRef} style={{ width: "100%" }}>
+            <p className="text-xs text-veryDarkGrayishBlue pb-4">{answer}</p>
+          </div>
+        </animated.div>
         {/* )} */}
-      </>
+      </div>
     );
   }
 );
