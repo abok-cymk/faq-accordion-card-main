@@ -38,7 +38,7 @@ const faqs = [
 const Faqs = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
   return (
-    <section id="faqs_section" className="grid grid-cols-1 gap-[3rem] bg-white rounded-4xl lg:grid-cols-2 md:max-w-2xl lg:max-w-4xl mx-auto items-center-safe px-4 md:px-14 py-6">
+    <section id="faqs_section" className="grid grid-cols-1 gap-[3rem] bg-white rounded-4xl lg:grid-cols-2 md:max-w-2xl lg:max-w-4xl mx-auto items-center-safe px-6 md:px-14 py-6">
     <Illustration /> 
       <div>
           <h2 className="text-3xl font-bold text-veryDarkDesaturatedBlue uppercase mb-4 max-sm:text-center">
